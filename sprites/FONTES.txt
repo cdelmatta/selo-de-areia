@@ -1,0 +1,43 @@
+Selo de Areia — fontes de arte para o protótipo aulas 08 e 09
+
+TILESET
+Nome: Tiny Dungeon (1.0)
+Autor: Kenney
+Página: https://kenney.nl/assets/tiny-dungeon
+Licença: Creative Commons Zero (CC0 1.0)
+Licença URL: https://creativecommons.org/publicdomain/zero/1.0/
+Arquivo utilizado: Tilemap/tilemap_packed.png (192x176; tiles 16x16 sem espaçamento).
+Atribuição não obrigatória. Crédito sugerido: Tiny Dungeon por Kenney (kenney.nl), CC0.
+Licença original: kenney_tiny-dungeon/License.txt
+
+PLAYER
+Nome: 24x32 characters with faces (big pack)
+Autora: Svetlana Kushnariova (Cabbit)
+Página: https://opengameart.org/content/24x32-characters-with-faces-big-pack
+Download: https://opengameart.org/sites/default/files/24x32-characters-big-pack-by-Svetlana-Kushnariova.zip
+Licença escolhida: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+Licença URL: https://creativecommons.org/licenses/by/3.0/
+Arquivo selecionado: Heroes/Ranger-M-01.png (153x128; charset na área esquerda72x128; 24x32).
+Crédito obrigatório especificado pela autora: Svetlana Kushnariova, lana-chan@yandex.ru
+Crédito sugerido completo: Ranger-M-01 por Svetlana Kushnariova (Cabbit), lana-chan@yandex.ru, de OpenGameArt.org, CC BY 3.0.
+Original tem fundo teal opaco. Se usar shader de chroma key, registrar alteração: fundo removido em tempo de execução por shader; recorte da área do charset.
+
+MÚMIA
+Nome: Mummies (v1.2)
+Autor: Jordan Irwin (AntumDeluge)
+Página: https://opengameart.org/content/mummies
+Link canônico: https://opengameart.org/node/101157
+Download: https://opengameart.org/sites/default/files/mummy-1.2.zip
+Licença escolhida: Creative Commons Attribution 3.0 Unported (CC BY 3.0; autor permite3.0 ou posterior).
+Licença URL: https://creativecommons.org/licenses/by/3.0/
+Arquivo recomendado: PNG/24x32/mummy-01.png (72x128; 3cols4rows; frame24x32).
+Crédito obrigatório: Jordan Irwin (AntumDeluge).
+Crédito sugerido completo: Mummies por Jordan Irwin (AntumDeluge), no estilo de Svetlana Kushnariova (Cabbit), OpenGameArt.org, CC BY 3.0.
+A base Cabbit é CC0 e crédito dela não é exigido para esta múmia, conforme README.txt.
+Licença original incluída: mummies/LICENSE-CC-BY-3.0.txt
+Alterações: caso haja modulate avermelhado, registrar como coloração via Godot.
+
+ORDEM DOS FRAMES DOS PERSONAGENS
+3colunas x 4linhas; cada frame24x32.
+Linha0/cima; linha1/direita; linha2/baixo; linha3/esquerda.
+Colunas0,1,2 caminhada; coluna1 central é idle.

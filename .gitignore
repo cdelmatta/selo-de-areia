@@ -1,0 +1,8 @@
+# Arquivos locais gerados pela Godot.
+.godot/
+docs/*.import
+builds/
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

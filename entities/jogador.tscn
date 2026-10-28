@@ -1,0 +1,168 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/jogador.gd" id="1_mi7s2"]
+[ext_resource type="Shader" path="res://sprites/retirar_fundo.gdshader" id="2_as3f3"]
+[ext_resource type="Texture2D" path="res://sprites/explorador.png" id="3_krsmw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vv3b2"]
+shader = ExtResource("2_as3f3")
+shader_parameter/cor_fundo = null
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvuv8"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 64, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntdb4"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(0, 64, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1y6is"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 64, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrf7a"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(48, 64, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ej8p"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8c0iw"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(0, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_byptf"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xet37"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(48, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gye3k"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 32, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6w5h"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(0, 32, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bj3w7"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 32, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onb46"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(48, 32, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nehf0"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 96, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk2l0"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(0, 96, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_raifr"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(24, 96, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3prry"]
+atlas = ExtResource("3_krsmw")
+region = Rect2(48, 96, 24, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6odg7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvuv8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntdb4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1y6is")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrf7a")
+}],
+"loop": 1,
+"name": &"baixo",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ej8p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8c0iw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_byptf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xet37")
+}],
+"loop": 1,
+"name": &"cima",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gye3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6w5h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bj3w7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_onb46")
+}],
+"loop": 1,
+"name": &"direita",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nehf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dk2l0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_raifr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3prry")
+}],
+"loop": 1,
+"name": &"esquerda",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jtkv7"]
+size = Vector2(10, 6)
+
+[node name="Jogador" type="CharacterBody2D" unique_id=742869660]
+motion_mode = 1
+script = ExtResource("1_mi7s2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1140846528]
+z_index = 1
+material = SubResource("ShaderMaterial_vv3b2")
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_6odg7")
+animation = &"baixo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=146056443]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_jtkv7")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1282850438]
+limit_left = 0
+limit_top = 0
+limit_right = 640
+limit_bottom = 384
