@@ -1,0 +1,68 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/fim.gd" id="1_5w2qk"]
+
+[node name="Fim" type="Control" unique_id=453484492]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_5w2qk")
+
+[node name="Fundo" type="ColorRect" parent="." unique_id=1510140235]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.09019608, 0.09019608, 0.10980392, 1)
+
+[node name="Linha" type="ColorRect" parent="." unique_id=1469929637]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 112.0
+offset_right = 420.0
+offset_bottom = 114.0
+color = Color(0.6509804, 0.5019608, 0.30980393, 1)
+
+[node name="Nome" type="Label" parent="." unique_id=575822833]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 74.0
+offset_right = 620.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0.9098039, 0.7490196, 0.47058824, 1)
+theme_override_font_sizes/font_size = 15
+text = "SELO DE AREIA"
+horizontal_alignment = 1
+
+[node name="Mensagem" type="Label" parent="." unique_id=902380069]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 137.0
+offset_right = 620.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(0.9098039, 0.7490196, 0.47058824, 1)
+theme_override_font_sizes/font_size = 36
+text = "Você venceu!"
+horizontal_alignment = 1
+
+[node name="Descricao" type="Label" parent="." unique_id=1762088251]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 198.0
+offset_right = 620.0
+offset_bottom = 246.0
+theme_override_colors/font_color = Color(0.8627451, 0.79607844, 0.6784314, 1)
+theme_override_font_sizes/font_size = 15
+text = "Você resistiu às ondas do templo."
+horizontal_alignment = 1
+
+[node name="Reiniciar" type="Label" parent="." unique_id=1915953697]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 266.0
+offset_right = 620.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.69411767, 0.6392157, 0.56078434, 1)
+theme_override_font_sizes/font_size = 14
+text = "Enter para jogar de novo"
+horizontal_alignment = 1
